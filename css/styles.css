@@ -1,0 +1,13 @@
+body{
+    background-color:rgb(114, 45, 45);
+    margin: 0;              
+    padding: 0;   
+}
+h1{
+    text-align: justify;
+
+}
+footer{
+    background-color: rgba(230, 225, 159, 0.449);
+    padding: 50px 20px;
+}
