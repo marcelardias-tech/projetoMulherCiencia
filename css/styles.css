@@ -90,11 +90,11 @@ nav {
 }
 
 .inmgs{
-    height: 280px;
+    height: 270px;
     text-align: center;
     border:5px solid rgb(135, 41, 41); 
     border-radius: 300px;
-    ;
+    margin: 2vh;
 }
 
 .container-imgs{
@@ -120,7 +120,8 @@ ul{
 
 .tex{ 
 
-    border: 1px solid black;   
-    width: 1000px;
+    border: 1px solid black; 
     align-content: center;
+    margin: 0vh 20vh;
+    background-color: rgb(235, 201, 139);
 }
