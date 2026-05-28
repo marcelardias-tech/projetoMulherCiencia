@@ -1,9 +1,3 @@
-/* Esta ligado no index */
-
-header{
-    
-}
-
 body{
     background-image: url(/papelback.jpg);
     background-repeat: no-repeat;
@@ -15,9 +9,3 @@ body{
 main {
     min-height: calc(100vh - 200px);
 }
-
-footer{
-
-}
-
-
