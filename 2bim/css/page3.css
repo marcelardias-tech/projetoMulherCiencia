@@ -45,7 +45,7 @@ main {
 .nav-link {
   color: #f3e0b8;
   text-decoration: none;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -73,7 +73,7 @@ h1 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
   text-indent: 30px;
 
@@ -126,9 +126,6 @@ th {
 td {
   background-color: #d2b683;
 }
-
-
-
 
 .footer-content {
   max-width: 1000px;
