@@ -73,20 +73,20 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   text-indent: 30px;
 
 }
 
 img {
-  width: 300px;
+  width: 250px;
   height: auto;
   border: solid 2px #333333;
 }
 
 figcaption {
-  width: 300px;
+  font-size: 0.85em;
 }
 
 h2 {
