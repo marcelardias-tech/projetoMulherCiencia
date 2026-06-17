@@ -1,4 +1,4 @@
-header {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,17 +15,10 @@ body {
   
 }
 
-main {
-  min-height: calc(100vh - 180px);
-}
-
-
-
 .site-header {
   background-color: #d12a2a;
   width: 100%;
   padding: 15px 20px;
-  border-bottom: 3px solid var(--accent-color);
 }
 
 .navbar {
@@ -136,16 +129,27 @@ h2 {
   align-items: center;
   margin: 35px auto 45px auto;
   padding: 0 20px;
-  gap: 40px;
   box-sizing: border-box;
 }
 
-.moldura-livro {
-  max-width: 380px;
+.conteudo-lado-a-lado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.moldura-livro {
+  max-width: 320px;
+  min-width: 250px;
+  width: 35%;
   background-color: #1a0f00;
   padding: 6px;
   border: 3px solid #8c2323;
+  flex-shrink: 0;
 }
 
 .imagem-capa {
@@ -155,30 +159,66 @@ h2 {
   max-height: 520px;
 }
 
+.paragrafo {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.paragrafo p {
+  text-align: justify;
+}
+
+.paragrafo h2 {
+  text-align: left;
+}
+
+section:not(.secao-capa) {
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:not(.secao-capa) p {
+  text-align: justify;
+}
+
 main {
   padding-bottom: 2vh;
 }
-.conteudo-flex {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 20px;
-}
 
-.conteudo-flex .moldura-livro {
-  width: 50%;
-}
+@media (max-width: 768px) {
+  .conteudo-lado-a-lado {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 
-.conteudo-flex .paragrafo {
-  width: 50%;
+  .moldura-livro {
+    width: 80%;
+    max-width: 350px;
+    min-width: unset;
+  }
+
+  .paragrafo {
+    min-width: unset;
+    width: 100%;
+    padding-right: 0; 
+  }
+
+  .secao-capa {
+    padding: 0 20px;
+  }
+
+  section:not(.secao-capa) {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width:600px){
   body{
-    background-image: url(/2bim/imgs/WhatsApp\ Image\ 2026-06-12\ at\ 21.10.48.jpeg);
+    background-image: url(/2bim/imgs/fundo-2.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    
   }
 }
-

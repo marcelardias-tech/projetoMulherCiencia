@@ -18,6 +18,13 @@ main {
   min-height: calc(100vh - 180px);
 }
 
+.conteudo-principal {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 
 .site-header {
   background-color: #3d6839;
@@ -65,12 +72,12 @@ main {
 h1 {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-indent: 30px;
   font-size: 35px;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-left: 2vh;
-  margin-right: 2vh;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 p {
@@ -78,9 +85,10 @@ p {
   font-family: 'Times New Roman', Times, serif;
   text-indent: 30px;
   font-weight: 500;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-bottom: 25px; 
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+  text-align: justify;
+
 }
 
 img {
@@ -96,13 +104,13 @@ figcaption {
 h2 {
   font-size: 25px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-left: 2vh;
-  margin-right: 2vh;
   font-weight: 500;
   margin-top: 50px;
   margin-bottom: 15px;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: left;
 }
 
 .footer {
@@ -115,10 +123,11 @@ h2 {
 }
 
 table {
-  width: 500px;
+  width: 80%;
+  max-width: 700px;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 th,td {
@@ -212,6 +221,7 @@ td {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 30px 0;
 }
 
 .cars-imgs div {
@@ -223,11 +233,27 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
+
+.cars-imgs figure{
+  max-width: 600px;
+  text-align: center;
+}
+
+.cars-imgs img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: solid 2px #333333;
+  border-radius: 8px; 
+}
+
+
 
 @media (max-width:600px){
   body{
-    background-image: url(/2bim/imgs/WhatsApp\ Image\ 2026-06-12\ at\ 21.10.48.jpeg);
+    background-image: url(/2bim/imgs/fundo-2.jpeg);
     background-size: cover;
     background-attachment: fixed;
     
